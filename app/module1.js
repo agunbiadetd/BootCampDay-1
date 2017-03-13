@@ -34,3 +34,19 @@ dataTypes: function(mydata) {
 }
 
 
+function getPrimes(n) {
+  var primeList = [];
+  for (var num = 0; num < n; num++){
+    if(isPrime(num) == true){
+      primeList.push(num);
+    } else if(num == zero){
+      return "not a prime";
+    } else if(num == negativeInput){
+      return "false";
+    } else if(num == invalidinput){
+      return "undefined";
+    }else{
+      return "false";
+    }
+  }
+}

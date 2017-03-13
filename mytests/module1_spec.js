@@ -1,6 +1,7 @@
 'use strict';
-   var dataTypes = require('../myappone/dayone.js').dataTypes;
+      
 
+   var dataTypes = require('../app/module1.js').dataTypes;
 
 describe("Data types tests ", function() {
   describe("Case for some falsy values", function() {
@@ -86,6 +87,9 @@ describe("Data types tests ", function() {
     });
   });
 });
+
+
+
 
 
 
