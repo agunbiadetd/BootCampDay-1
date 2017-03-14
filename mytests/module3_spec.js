@@ -1,5 +1,9 @@
-```(function(){
+(function(){
   'use strict';
+
+var Pet = require('../app/module3.js').Pet;
+
+
   describe("Pet Class: Create a Pet, make it sleep", function() {
     it("The pet should be a type of `object`, and an instance of the `Cat` class", function() {
       var Cat = new Pet('Cat');
@@ -24,9 +28,9 @@
       var Eagle  = new Eagle('EAGLE', 'Hen', 'Vulture');
       expect(eagle.numOflegs).toBe(2);
       expect(eagle.isPerson).toBe(false);
-      var Sheep = new Pet('Koenigsegg', 'Agera R');
-      expect(koenigsegg.numOfWheels).toBe(4);
-      expect(koenigsegg.isSaloon).toBeTruthy();
+      var Sheep = new Pet('Sheep');
+      expect(sheep.numOfLegs).toBe(4);
+      expect(sheep.isAnimal).toBeTruthy();
     });
   });
-})();```
+})();

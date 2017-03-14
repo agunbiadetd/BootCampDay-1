@@ -1,33 +1,30 @@
 'Option strict';
 
-Pet = function(Animal){
-	this.sleep = sleep;
+Pet = function(name){
+    this.name = name;
 }
-Pet.prototype.sleepingtime = 0;
-Pet.prototype.sleep = function() { return 'i am sleeping'};
+Animal.prototype.totalNumberOfOffspring = 0;
+Animal.prototype.eat = function() { return 'I am munching.'};
 
-Cat = function(name, colour, habitat){
-	this.base = Animal;
-	this.base("Cat");
-	this.name = name;
-	this.color = color;
-	this.habitat = habitat;
-	this.move = function () {
-		return "having a sound sleep"};
+Pet = function(name, colour){
+    this.base = Animal;
+    this.base(name);
+    this.color = color;
+    this.habitat = 'Home';
+    this.eat = function () {
+        return "I am enjoying a bowl of cereal my owner just served me."};
+    }
+Pet.prototype = new Animal;
+Pet.prototype.friendlinessIndex = 0;
 
-	}
-Cat.prototype = new Cat;
-Cat.prototype = sleepingHours = 0;
+WildAnimal = function(name, colour, habitat){
+    this.base = Animal;
+    this.base(name);
+    this.color = color;
+    this.habitat = habitat;
+    this.eat = function () {
+        return "I am tearing apart an antelop I just killed."};
+    }
+WildAnimal.prototype = new Dog;
 
-Dog = function(name, colour, habitat){
-	this.base = Animal;
-	this.base("Dog");
-	this.name = name;
-	this.color = color;
-	this.habitat = habitat;
-	this.move = function () {
-		return "I can bark very well"};
-
-	}
-Dog.prototype = new Dog;
-module.exports = {Pet, Cat, Dog};
+module.exports = {Animal, Pet, WildAnimal};
