@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-var pet = require('../app/module3.js').pet;
+var pet = require('../app/oop.js').pet;
 var domesticAnimal = require('../app/module3.js').domesticAnimal
 var wildAnimal = require('../app/module3.js').wildAnimal
 

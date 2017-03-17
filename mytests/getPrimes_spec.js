@@ -1,5 +1,5 @@
 'use strict';
-   var getPrimes = require('../app/module2.js').getPrimes;
+   var getPrimes = require('../app/getPrimes.js').getPrimes;
 
 
 describe("Get Prime Numbers ", function() {
