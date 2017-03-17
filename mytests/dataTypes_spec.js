@@ -4,8 +4,8 @@
    var dataTypes = require('../app/module1.js').dataTypes;
 
 describe("Data types tests ", function() {
+  
   describe("Case for some falsy values", function() {
-
     it("should return 'no value' for null", function() {
       expect(dataTypes(null)).toEqual('no value');
     });

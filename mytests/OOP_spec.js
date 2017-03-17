@@ -1,14 +1,15 @@
 (function(){
   'use strict';
 
-var Pet = require('../app/module3.js').Pet;
-
+var pet = require('../app/module3.js').pet;
+var domesticAnimal = require('../app/module3.js').domesticAnimal
+var wildAnimal = require('../app/module3.js').wildAnimal
 
   describe("Pet Class: Create a Pet, make it sleep", function() {
     it("The pet should be a type of `object`, and an instance of the `Cat` class", function() {
       var Cat = new Pet('Cat');
       expect(typeof Cat).toEqual(typeof {});
-      expect(Cat instanceof ).toBeTruthy();
+      expect(Cat instanceof animal).toBeTruthy();
     });
     it("The Pet should be called 'Lucky' if no name is passed as a parameter", function() {
       var Dog = new Pet();
@@ -32,5 +33,6 @@ var Pet = require('../app/module3.js').Pet;
       expect(sheep.numOfLegs).toBe(4);
       expect(sheep.isAnimal).toBeTruthy();
     });
+  });
   });
 })();
